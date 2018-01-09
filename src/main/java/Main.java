@@ -10,13 +10,14 @@ import pages.ContactPage;
 import pages.MainPage;
 
 public class Main {
-	public static void main(String[] args) throws InterruptedException, IOException {
+
+	public static void main(String[] args) throws IOException {
 
 		System.setProperty("webdriver.chrome.driver", "E:\\Java\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
-		new MainPage(driver);
-		//new ContactPage(driver);
+		//new MainPage(driver);
+		new ContactPage(driver);
 
 		//Thread.sleep(5000);
 		driver.quit();
@@ -25,7 +26,7 @@ public class Main {
 		Properties p = new Properties();
 		p.load(new FileReader("MILITARYDEPARTMENTS.properties"));
 
-		System.out.println(p.getProperty("Army"));
+		//System.out.println(p.getProperty("Army"));
 
 	}
 }

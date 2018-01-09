@@ -15,7 +15,7 @@ public abstract class AbstractPage {
 		this.driver = driver;
 	}
 
-	protected abstract void go();
+	protected abstract  void go();
 
 
 }
