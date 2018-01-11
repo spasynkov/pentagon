@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+
 public class ArmyPage extends AbstractPage {
 	public ArmyPage(WebDriver driver) {
 		super(driver);
@@ -26,4 +27,5 @@ public class ArmyPage extends AbstractPage {
 
 
 	}
+
 }

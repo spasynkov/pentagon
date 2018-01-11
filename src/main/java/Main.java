@@ -3,8 +3,11 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import com.google.common.annotations.VisibleForTesting;
 
 import pages.ContactPage;
 import pages.MainPage;
@@ -29,4 +32,7 @@ public class Main {
 		//System.out.println(p.getProperty("Army"));
 
 	}
+
+
+
 }
