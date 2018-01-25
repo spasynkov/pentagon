@@ -5,6 +5,8 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 
 public class ArmyPage extends AbstractPage {
@@ -26,6 +28,21 @@ public class ArmyPage extends AbstractPage {
 		driver.navigate().back();
 
 
+		Actions builder = new Actions(driver);
+		WebElement webElement = null;
+
+		builder
+				.contextClick(webElement)
+				.sendKeys(Keys.ARROW_DOWN)
+				.sendKeys(Keys.ARROW_DOWN)
+				.sendKeys(Keys.RETURN)
+				.build()
+			.perform();
+
+
+
 	}
+
+
 
 }
