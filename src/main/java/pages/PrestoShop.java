@@ -38,6 +38,7 @@ public class PrestoShop extends AbstractPage {
 
 		});
 		Actions mouse = new Actions(driver);
+		Action sd;
 		mouse
 				.moveToElement(driver.findElement(By.cssSelector("#p-262 > div.main-container > div.page" +
 				".no_translate > div.ecwid-demo-menu > div > div.ecwid-demo-menu__controls > div > " +
