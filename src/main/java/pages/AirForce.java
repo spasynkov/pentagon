@@ -11,14 +11,15 @@ public class AirForce extends AbstractPage {
 	}
 
 	@Override
-	protected void go() {
+	public void go() {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 
 		}
-		driver.navigate().back();
+		this.driver.navigate().back();
+
 
 	}
 }

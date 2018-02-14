@@ -1,9 +1,7 @@
 package pages;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WindowHanndleIterator {
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "E:\\Java\\chromedriver.exe");
+		/*System.setProperty("webdriver.chrome.driver", "E:\\Java\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://demo.guru99.com/popup.php");
@@ -34,6 +32,19 @@ public class WindowHanndleIterator {
 			}
 			else System.out.println("bad");
 		}*/
+
+		Sogitel vasya = new Sogitel("vasya");
+		Sogitel himka = new Sogitel("himka");
+
+		vasya.setDrugayaPolovinka(himka);
+		himka.setDrugayaPolovinka(vasya);
+		vasya.punchInDeFace();
+		Sogitel tiyson = new Sogitel("Tiyson");
+		tiyson.punchInDeFace(vasya);
+		tiyson.punchInDeFace(himka);
+
+
+
 
 	}
 
